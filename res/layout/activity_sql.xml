@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/app_background">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="29dp"
+        android:src="@drawable/sjsu_logo" />
+
+    <TextView
+        android:id="@+id/textViewSQLHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginLeft="44dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="SQLLite View"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textViewBlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="92dp"
+        android:text="Blog"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/editTextBlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/ButtonCancelSQL"
+        android:layout_alignTop="@+id/textViewBlog"
+        android:layout_toRightOf="@+id/imageView1"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="5"
+        android:maxLines="5"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Sample Text\nSampleText2\nSample Text3"
+        android:textSize="13sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonSaveSQL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewBlog"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="67dp"
+        android:layout_marginLeft="20dp"
+        android:background="#BDB76B"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/ButtonCancelSQL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonSaveSQL"
+        android:layout_alignBottom="@+id/buttonSaveSQL"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="38dp"
+        android:background="#BDB76B"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Cancel" />
+
+</RelativeLayout>

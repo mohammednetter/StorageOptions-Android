@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/sjsu_logo" />
+
+    <TextView
+        android:id="@+id/textViewPrefHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView1"
+        android:layout_marginLeft="54dp"
+        android:layout_toRightOf="@+id/imageView1"
+        android:text="Preferences"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textViewBookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextBookName"
+        android:layout_alignBottom="@+id/editTextBookName"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:text="Book Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/editTextBookName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewPrefHeader"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="86dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="  Max. 70 Characters"
+        android:textSize="13sp" 
+        android:maxLength="70"
+        />
+
+    <TextView
+        android:id="@+id/TextViewBookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewBookName"
+        android:layout_below="@+id/textViewBookName"
+        android:layout_marginTop="38dp"
+        android:text="Book Author"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/EditTextBookAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TextViewBookAuthor"
+        android:layout_alignBottom="@+id/TextViewBookAuthor"
+        android:layout_alignLeft="@+id/editTextBookName"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="  Max 70 Characters"
+        android:textSize="13sp" 
+        android:maxLength="70"/>
+
+    <TextView
+        android:id="@+id/TextViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextViewBookAuthor"
+        android:layout_below="@+id/TextViewBookAuthor"
+        android:layout_marginTop="54dp"
+        android:text="Description"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewPrefHeader"
+        android:layout_alignRight="@+id/EditTextBookAuthor"
+        android:layout_alignTop="@+id/TextViewDescription"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLength="255"
+        android:maxLines="4"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp"
+        android:text="Max 255 Characters only"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="66dp"
+        android:layout_toLeftOf="@+id/EditTextBookAuthor"
+        android:background="#BDB76B"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/ButtonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonSave"
+        android:layout_alignBottom="@+id/buttonSave"
+        android:layout_alignRight="@+id/editTextDescription"
+        android:layout_marginRight="18dp"
+        android:background="#BDB76B"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Cancel" />
+
+</RelativeLayout>
